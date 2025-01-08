@@ -3,3 +3,4 @@
   892  npm i express pg pg-hstore sequelize cors dotenv
   894  npm i -D nodemon
   npm i express-fileupload
+  npm i jsonwebtoken bcrypt
