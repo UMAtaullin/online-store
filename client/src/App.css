@@ -1,0 +1,9 @@
+.custom-button {
+  margin: 5px auto;
+  padding: 7px;
+  width: 72vh;
+  text-align: center;
+  border: none;
+  border-radius: 9px;
+  background-color: aqua;
+}
