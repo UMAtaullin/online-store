@@ -42,9 +42,9 @@
 ### Сетки
 - **`row`**: создает строку в сетке
 - **`col`, `col-{size}`, `col-{size}-offset-{number}`**: создают колонки с заданной шириной
-
+C
 Эти классы позволяют легко управлять стилями и макетом вашего приложения, обеспечивая адаптивность и модульность.
-
+<Col md={3}> - три колонки
 Citations:
 [1] https://ru.hexlet.io/qna/bootstrap/questions/bootstrap-navbar-ne-rabotaet
 [2] https://ru.stackoverflow.com/questions/628112/%D0%9D%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-navbar-toggle

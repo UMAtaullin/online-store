@@ -7,7 +7,6 @@ export default class UserStore {
     makeAutoObservable(this)
   }
 
-  // actions которые изменяют состояние
   setIsAuth(bool) {
     this._isAuth = bool
   }
@@ -15,7 +14,6 @@ export default class UserStore {
     this._user = user
   }
 
-  // getters для получения переменных из текущего состояния
   get isAuth() {
     return this._isAuth
   }

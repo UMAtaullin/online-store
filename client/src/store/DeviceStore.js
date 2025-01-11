@@ -6,11 +6,15 @@ export default class DeviceStore {
       { id: 1, name: 'Телефон' },
       { id: 2, name: 'Ноутбук' },
       { id: 3, name: 'Монитор' },
+      { id: 4, name: 'Смартфон' },
+      { id: 5, name: 'Компьютер' },
     ]
     this._brands = [
       { id: 1, name: 'Apple' },
       { id: 2, name: 'Samsung' },
       { id: 3, name: 'Xiaomi' },
+      { id: 4, name: 'Huawei' },
+      { id: 5, name: 'Google' },
     ]
     this.device = [
       {
@@ -54,10 +58,9 @@ export default class DeviceStore {
           processor: 'A15 Bionic',
           memory: '64GB',
         },
-      },
-
-      
+      },     
     ]
+    this._selectedType = {}
     makeAutoObservable(this)
   }
 
@@ -70,6 +73,9 @@ export default class DeviceStore {
   setDevices(devices) {
     this._devices = devices
   }
+  setSelectedType(type) {
+    this._selectedType = type;
+  }
 
   get types() {
     return this._types
@@ -79,5 +85,8 @@ export default class DeviceStore {
   }
   get devices() {
     return this._devices
+  }
+  get selectedType() {
+    return this._selectedType
   }
 }
