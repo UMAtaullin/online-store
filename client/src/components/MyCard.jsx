@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MyCard = (props) => {
-  debugger
+
   return (
     <div
       className='card m-2 {`card border-${props.border}`}'
@@ -15,8 +15,7 @@ const MyCard = (props) => {
       <div className='card-body'>
         <h5 className='card-title'>{props.title}</h5>
         <p className='card-text'>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Some quick example text to build on the card title and ...
         </p>
         <button 
           onClick={props.onClick} href='#' 
