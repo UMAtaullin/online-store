@@ -1,0 +1,1 @@
+className='text-center'

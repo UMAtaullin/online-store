@@ -78,6 +78,7 @@ export default class DeviceStore {
     this._selectedType = type;
   }
   setSelectedBrand(brand) {
+    console.log('Выбранный бренд:', brand); 
     this._selectedBrand = brand;
   }
 
