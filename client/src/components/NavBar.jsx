@@ -4,12 +4,13 @@ import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
 import Box from '@mui/material/Box'
 
 const NavBar = observer(() => {
   const { user } = useContext(Context)
+  const navigate =useNavigate()
 
   return (
     <AppBar position='static'>
@@ -27,8 +28,8 @@ const NavBar = observer(() => {
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           {user.isAuth ? (
             <>
-              <Button color='inherit'>Админ панель</Button>
-              <Button color='inherit' sx={{ ml: 2 }}>
+              <Button onClick={() => navigate('/admin')} color='inherit'>Админ панель</Button>
+              <Button onClick={() => navigate('/login')} color='inherit' sx={{ ml: 2 }}>
                 Выйти
               </Button>
             </>
