@@ -3,4 +3,5 @@
 - **`mt-{breakpoint}-{size}`**: margin-top
 - **`mr-{breakpoint}-{size}`**: margin-right
 - **`mb-{breakpoint}-{size}`**: margin-bottom
-- **`ml-{breakpoint}-{size}`**: margin-left (заменить на `ms-{size}` в 
+- **`ml-{breakpoint}-{size}`**: margin-left (заменить на `ms-{size}` 
+p-2 padding: 2;
